@@ -17,7 +17,7 @@ function App() {
    }, [])
 
    const getActivity = async() => {
-    const textActivity = await fetch (`http://www.boredapi.com/api/activity/`);
+    const textActivity = await fetch (`https://www.boredapi.com/api/activity/`);
     const data = await textActivity.json();
     setActivity(data.activity)
    }
